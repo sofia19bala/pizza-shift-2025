@@ -1,0 +1,12 @@
+/* CATALOG */
+main{
+  width: 960px;
+  margin: 0 auto;
+}
+.catalog_list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 48px 32px;
+  margin: 48px 0;
+  
+}
