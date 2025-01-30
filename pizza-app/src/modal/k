@@ -1,0 +1,79 @@
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+    const openModal = (item) => {
+      setSelectedItem(item);
+      setModalIsOpen(true);
+    };
+  
+    const closeModal = () => {
+      setModalIsOpen(false);
+    setSelectedItem(null); 
+    };
+
+    // const modalContent = (
+    //   <div>
+    //     <h2>Заголовок модального окна</h2>
+    //     <p>Текст модального окна</p>
+    //     <button onClick={closeModal}>Закрыть</button>
+    //   </div>
+    // );
+    
+    const modalContent = selectedItem ? ( // Проверяем, есть ли выбранный элемент
+
+      <div className='modal'>
+        <button  className='modal-close-button' onClick={closeModal}>Закрыть</button>
+        
+        <div className="modal_choice_pizza" >
+          <img src={`https://shift-intensive.ru/api${selectedItem.img}`} alt={selectedItem.name} width="220px" height="220px" />
+
+          <div className='ingredients'>
+            <div>
+              <h2>{selectedItem.name}</h2>
+              <p>nkk</p>
+              <p>{selectedItem.description}</p>
+            </div>
+            
+            <div className='size_pizza'>
+              <ul >
+                {selectedItem.sizes.map((item, indx) => (
+                <li key={indx}>
+                  {item.name}
+                </li>
+              ))}
+              </ul>
+            </div>  
+        
+            <div>
+              <p>Добавить по вкусу</p>
+              <ul className='ingredients_list'>{selectedItem.ingredients.map((item, i) => (
+                <li className='ingredient_item' key={i}>
+                  <img src={`https://shift-intensive.ru/api${item.img}`} alt={item.name} width="108px" height="108px"></img>
+                  <h4>{item.name}</h4>
+                  <p className='pizza_cost'>{item.cost} Р</p>
+                </li>
+              ))}
+              </ul>
+            </div>
+            <button className='btn_add_basket'>Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+
+      // <div>
+      //   <h2>{selectedItem.name}</h2> {/* Используем данные выбранного элемента */}
+      //   <p>{selectedItem.description}</p>
+      //   <img src={`https://shift-intensive.ru/api${selectedItem.img}`} alt={selectedItem.name} width="220px" height="220px" />
+      //   <p className='pizza_cost'>От {selectedItem.sizes[0].price} Р</p>
+      //   <button onClick={closeModal}>Закрыть</button>
+      // </div>
+    ) : (
+      <div>
+        <p>Текст модального окна</p>
+        <button onClick={closeModal}>Закрыть</button>
+      </div>
+    );
+
+    const m = () => {
+      return modalContent
+    };
