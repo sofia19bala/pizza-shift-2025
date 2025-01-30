@@ -1,0 +1,26 @@
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 24px auto;
+  width: 960px;
+}
+
+.navigation_list{
+  display: flex;
+  gap: 32px;
+  height: 39px;
+  align-items: center;
+}
+
+.navigation_list_item a{
+  display: flex;
+  font-weight: 500;
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation_list_item a{
+  font-weight: 500;
+  color: rgba(52, 64, 81, 100%);
+}

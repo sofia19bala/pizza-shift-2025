@@ -1,0 +1,49 @@
+
+.catalog_item{
+  min-height: 484px;
+  position: relative;
+}
+.pizza_img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.pizza_name{
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(41,41,41);
+  margin-bottom: 8px;
+}
+
+.pizza_desc{
+  color: rgba(83, 83, 83, 100%);
+  font-weight: 400px;
+  margin-bottom: 32px;
+}
+
+.wrap{
+  position: absolute;
+  bottom: 0;
+  display: flexbox;
+  gap: 10px;
+  width: 100%;
+}
+
+.pizza_cost{
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(41,41,41);
+  margin-bottom: 24px;
+}
+
+.btn_choice{
+  width: 100%;
+  height: 54px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background-color:rgb(244, 81, 31);
+  color: white;
+  font-weight: 600;
+}
