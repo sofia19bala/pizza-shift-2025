@@ -1,0 +1,103 @@
+.pizza_modal_bg {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items:center;
+}
+
+.pizza_modal_bg.active{
+  display: flex;
+}
+
+.modal{
+  background-color: white;
+  height: 644px;
+  width: 806px;
+  border-radius: 10px;
+}
+
+.btn_close{
+  position: relative;
+  margin-top: 16px;
+  margin-right: 24px;
+  margin: 16px 24px 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.show_pizza{
+  padding: 24px 64px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.choice_pizza{
+  max-height: 556px;
+}
+
+.container{
+  height: 476px;
+  margin-bottom: 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.container::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(206, 210, 218, 1);
+  border-radius: 100px;
+}
+
+.choice_pizza_title{
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+h2 .pizza_name{
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.choice_pizza_title p{
+  color: rgba(83, 83, 83, 1);
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.toppings_list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 11px;
+  margin-top: 8px;
+}
+
+.toppings_title{
+  margin-bottom: 8px;
+  font-weight: 500;
+}

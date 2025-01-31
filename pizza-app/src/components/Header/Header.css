@@ -1,0 +1,31 @@
+header{
+  border-bottom: 1px solid rgba(206, 210, 218, 1);
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 24px auto;
+  width: 960px;
+}
+
+.navigation_list{
+  display: flex;
+  gap: 32px;
+  height: 39px;
+  align-items: center;
+}
+
+.navigation_list_item a{
+  display: flex;
+  font-weight: 500;
+  gap: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: rgba(52, 64, 81, 100%);
+}
+
+
+.catalog_link{
+  width: 102px;
+}
