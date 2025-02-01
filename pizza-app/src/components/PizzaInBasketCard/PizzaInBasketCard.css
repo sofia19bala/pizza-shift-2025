@@ -1,0 +1,77 @@
+.pizza_in_basket_item{
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pizza_in_basket_img{
+  height: 63px;
+  width: auto;
+}
+
+.pizza_in_basket_name{
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 120px;
+}
+
+.pizza_in_basket_desc{
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 280px;
+}
+
+.wrap_btn_count{
+  width: 100px;
+  height: 36px;
+  align-items: center;
+  background-color: rgba(243, 244, 246, 1);
+  /* padding: 6px 0; */
+  margin-right: 24px;
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.wrap_btn_count *{
+  display: block;
+  height: 16px;
+
+  /* line-height: 20px; */
+  font-size: 14px;
+  width: 60;
+  color: inherit;
+}
+
+.wrap_btn_count button{
+  background-color: rgba(243, 244, 246, 0);
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.btn_change{
+  font-size: 14px;
+  text-decoration: underline;
+  color: rgba(151, 161, 175, 1);
+  width: 100px;
+}
+
+.pizza_in_basket_cost{
+  line-height: 16px;
+  font-size: 24px;
+  font-weight: 500;
+
+  width: 160px;
+}
+
+.btn_delete{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

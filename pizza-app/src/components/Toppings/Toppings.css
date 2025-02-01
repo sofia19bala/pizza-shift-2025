@@ -1,0 +1,29 @@
+.topping_item{
+  box-shadow: 0px 4px 12px 0px rgba(26, 26, 30, 0.15);
+  border-radius: 16px;
+  padding: 8px;
+  min-height: 176px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.topping_item_active{
+  background-color: rgb(243, 244, 246);
+}
+
+.topping_name{
+  font-size: 12px;
+  line-height: 16px;
+  height: 32px;
+
+  margin-top: 12px;
+}
+
+.topping_cost{
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgb(41,41,41);
+}
