@@ -1,0 +1,26 @@
+.size_pizza{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 16px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 20px;
+  height: 44px;
+  width: 100%;
+
+  cursor: pointer;
+
+  background-color: rgba(243, 244, 246, 1);
+  color: rgba(99, 112, 131, 1);
+}
+
+.active_size_pizza{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(243, 244, 246, 1);
+  box-sizing: border-box;
+  color: rgba(20, 28, 36, 1);
+}
